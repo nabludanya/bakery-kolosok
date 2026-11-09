@@ -1,0 +1,154 @@
+/* || Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fdf6ec;   /* тёплый кремовый фон */
+  color: #3b2a1a;
+}
+
+/* || Шапка (id-селектор) */
+#top-header {
+  background: linear-gradient(180deg, #d9a441, #b8860b);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #8b5a2b;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#top-header h1 {
+  font-size: 2.5rem;
+  color: #fff8e7;
+  text-shadow: 2px 2px 6px #5a3a10;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  color: #fff3d6;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* || Навигация (класс + псевдоклассы) */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff8e7;
+  color: #8b5a2b;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-nav a:link    { color: #8b5a2b; }
+.main-nav a:visited { color: #8b5a2b; }
+
+.main-nav a:hover {
+  background-color: #8b5a2b;
+  color: #fff8e7;
+  transform: translateY(-2px);
+}
+
+.main-nav a.active {
+  background-color: #8b5a2b;
+  color: #fff8e7;
+}
+
+/* || Основной блок */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.welcome {
+  background-color: #fff;
+  border-left: 8px solid #d9a441;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.welcome h2 {
+  color: #b8860b;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background-color: #d9a441;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #8b5a2b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* || Список преимуществ */
+.features h2 {
+  color: #b8860b;
+  margin-bottom: 15px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed #d9a441;
+}
+
+.badge {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #d9a441;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* || Подвал (id-селектор) */
+#main-footer {
+  background-color: #8b5a2b;
+  color: #fff8e7;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

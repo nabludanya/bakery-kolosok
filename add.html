@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Добавить товар — Булочная «Колосок»</title>
+  <link rel="stylesheet" href="styles/others.css">
+</head>
+<body>
+
+  <header>
+    <h1>Булочная «Колосок»</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="products.html">Товары</a></li>
+        <li><a href="add.html" class="active">Добавить товар</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Добавление нового товара</h2>
+
+    <form class="add-form" action="#" method="post">
+
+      <label for="product-name">Название товара *</label>
+      <input type="text" id="product-name" name="name"
+             placeholder="Например: Круассан с шоколадом" required>
+
+      <label for="product-category">Категория</label>
+      <select id="product-category" name="category">
+        <option value="bread">Хлеб</option>
+        <option value="pastry">Выпечка</option>
+        <option value="cake">Пирожные и торты</option>
+        <option value="drink">Напитки</option>
+      </select>
+
+      <label for="product-price">Цена, ₽ *</label>
+      <input type="number" id="product-price" name="price"
+             min="1" step="1" placeholder="60" required>
+
+      <label for="product-desc">Описание</label>
+      <textarea id="product-desc" name="description" rows="4"
+                placeholder="Краткое описание товара..."></textarea>
+
+      <label for="product-photo">Фотография</label>
+      <input type="file" id="product-photo" name="photo" accept="image/*">
+
+      <button type="submit">Добавить товар</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Булочная «Колосок»</p>
+  </footer>
+
+</body>
+</html>
